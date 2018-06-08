@@ -10,8 +10,8 @@ import android.widget.SeekBar;
 public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3,b4;
-    SeekBar seekBar1, seekBar2, seekBar3;
-    int laser, boom,gato,disparo;
+    SeekBar seekbar1,seekbar2,seekbar3;
+    int laser,boom,gato,disparo;
     GestorSonido snd;
 
     @Override
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         gato = snd.carga(R.raw.gato);
         disparo = snd.carga(R.raw.disparo);
 
-        seekBar1 = findViewById(R.id.simpleSeekBar1);
-        seekBar2 = findViewById(R.id.simpleSeekBar2);
-        seekBar3 = findViewById(R.id.simpleSeekBar3);
+        seekbar1 = findViewById(R.id.simpleSeekBar1);
+        seekbar2 = findViewById(R.id.simpleSeekBar2);
+        seekbar3 = findViewById(R.id.simpleSeekBar3);
 
         SeekBar.OnSeekBarChangeListener barChange;
         barChange = new SeekBar.OnSeekBarChangeListener() {
@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        seekBar1.setOnSeekBarChangeListener(barChange);
-        seekBar2.setOnSeekBarChangeListener(barChange);
-        seekBar3.setOnSeekBarChangeListener(barChange);
+        seekbar1.setOnSeekBarChangeListener(barChange);
+        seekbar2.setOnSeekBarChangeListener(barChange);
+        seekbar3.setOnSeekBarChangeListener(barChange);
 
     }
 
